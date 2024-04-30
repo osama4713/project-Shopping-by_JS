@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+
+  <link rel="StyleSheet" href="./CSS/all.css" />
+  <link rel="StyleSheet" href="./CSS/font-awesome.min.css" />
+  <link rel="StyleSheet" href="./CSS/bootstrap.min.css" />
+  <link rel="styleSheet" href="./CSS/style.css" />
+  <link rel="styleSheet" href="./CSS/cart.css" />
+ 
+
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg nav-all">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Online Shopping</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end w-50" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex flex-shrink-1">
+                    <li class="nav-item fw-bold me-4">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color:rgb(21, 21, 21);">Home</a>
+                    </li>
+                    <li class="nav-item fw-bold me-4" >
+                        <a class="nav-link" href="cart.html#Favorite">Favorite</a>
+                    </li>
+                    <li class="nav-item cartNavItem">
+                        <a class="nav-link cartNavIcon d-flex">
+                            <div class="cartIconBox">
+                                <i class="fa-solid fa-cart-shopping fs-5 me-2"></i>  
+                                <span class="cartBadge"></span>
+                            </div>
+                            <span class="fw-bold">Cart</span>
+                        </a>
+                        <div class="cartMenu">
+                            <div class="cartProductsContainer" id="cartProductsContainer">
+                        
+                            </div> 
+
+                            <div class="cartBtn">
+                                <a class="btn btn-primary" href="cart.html"> View All Product</a>
+                                <button class="btn btn-danger" id="deleteAllCart"> Delete All</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                </ul>
+                <div class="d-flex justify-content-start  ms-lg-3 mt-lg-0 profileBox">
+                    <button class="btn btn1-home fst-italic " id="signInBtn" type="submit"><a href="./signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> SignIn</a></button>
+                    <button class="btn btn1-home fst-italic" id="signupBtn" type="submit"><a href="./signup.html"><i class="fa-solid fa-user-plus"></i> SignUp</a></button>
+                    <a class="me-5"  id="profileNameBox">
+                        <img src="image/userPhoto.png" alt="image-username" id="userImg"> 
+                        <div class="profileNameMenu">
+                            <button class="w-100 profileName profileMenuItem"> <i class="fa-solid fa-user"></i> &nbsp; Hi, </button>
+                            <button class="w-100 profileMenuItem"><i class="fa-solid fa-gear"></i>&nbsp; Edit Profile</button>
+                            <button class="btn btn-danger" id="logoutBtn">Logout  <i class="fa-solid fa-right-from-bracket"></i></button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <main class="my-5 py-5 d-flex flex-column container" id="Cart">
+    <h2 class=" mb-4 sectionTitle">Your Cart </h2>
+    <div class="cartContainer container d-flex flex-column flex-lg-row p-5 mb-5">
+      <h2 class="emptyContainer">Cart Is Empty</h2>
+      <a class="btn" href="index.html">Go Shopping</a>
+    </div> <!-- cartContainer -->
+        
+    <div class="totalPriceContainer  justify-content-between  flex-column flex-md-row">
+      <h2 class="totalPrice">Total Price : <span>0.00</span></h2>
+      <div class="mt-2 mt-md-0">
+        <button class="btn btn-success buyingBtn">Proceed to Buy</button>
+        <button class="btn btn-danger deleteAllBtn">Delete ALL</button>
+      </div>
+    </div>
+
+    <hr>
+        
+    <div class="mt-5" id="Favorite">
+      <h2 class="mb-4 sectionTitle">Favorite</h2>
+      <div class="Favorite">
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example  favoriteContainer" tabindex="0">
+
+        </div>
+            
+        <div id="list-example" class="list-group circlesBox d-none d-lg-flex">
+
+        </div>
+      </div> <!-- Favorite -->
+    </div>
+  </main>
+
+
+  <footer class="bd-footer mt-5 mb-4">
+    <div class="container-fluid bg-dark" style="width: 90%;">
+      <div class="row justify-content-evenly" style="text-align: center;">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="" style="width: 100%;">
+            <h3 class="text-light pt-4 pb-3 fw-bold">Address</h3>
+            <a href="#" class="footer-link fs-5 fst-italic" style="text-decoration: none;"><i
+              class="fa-solid fa-location-dot"></i><span> Location</span></a><br>
+            <a href="#" class="footer-link fs-5 fst-italic" style="text-decoration: none;"><i class="fa-solid fa-phone"></i>
+            <span> Call+20 01225139329</span></a><br>
+            <a href="#" class="footer-link fs-5 fst-italic" style="text-decoration: none;"><i
+                class="fa-solid fa-envelope"></i> <span> osamatamer471@gmail.com</span></a>
+
+            <br />
+
+            <a href="#"><i class="fa-brands fa-square-facebook ms-2 mt-4 mb-4 fs-1 pb-2 footer-link"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter ms-3 fs-1 pb-2 footer-link"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin ms-3 fs-1 pb-2 footer-link"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram ms-3 fs-1 pb-1 footer-link"></i></a>
+          </div>
+        </div>
+    
+        <div class="col-sm-12 col-md-6 col-lg-3 ps-3">
+          <div class="" style="width: 100%;">
+            <h3 class="text-light pt-4 pb-3 fw-bold">Info</h3>
+            <p class="text-light pb-3 fs-5 fst-italic" style="width: 100%;">
+              necessary, making this the first true generator on the Internet.It uses a dictionary of over 200 Latin
+              words, combined with a handful
+            </p>
+          </div>
+        </div>
+    
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div style="width: 100%;">
+            <h3 class="text-light pt-4 pb-3 fw-bold">Links</h3>
+            <a href="./index.html" class=" footer-link fs-5 fst-italic" style="text-decoration: none;"><i
+              class="fa-solid fa-house"></i><span> Home</span></a><br>
+            <a href="./about.html" class=" footer-link fs-5 fst-italic" style="text-decoration: none;"><i
+              class="fa-solid fa-paperclip"></i></i><span> About</span></a><br>
+            <a href="./shopping.html" class=" footer-link fs-5 fst-italic" style="text-decoration: none;"><i 
+              class="fa-solid fa-cart-plus"></i><span> Shopping</span></a><br>
+            <a href="#" class=" footer-link fs-5 fst-italic" style="text-decoration: none;"><i
+              class="fa-solid fa-users-viewfinder"></i><span> Team</span></a><br>
+            <a href="./login.html" class=" footer-link fs-5 fst-italic " style="text-decoration: none;"><i
+              class="fa-solid fa-user"></i><span> Login</span></a><br>
+            <a href="./register.html" class=" footer-link fs-5 fst-italic" style="text-decoration: none;"><i 
+              class="fa-solid fa-registered pb-4"></i></i><span> Register</span></a><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <p class="mt-3 fw-bold fs-5 m-auto">COPYRIGHT © 2024 . ALL RIGHT RESERVED BY COLORLIB</p>
+    </div>
+  </footer>
+
+ 
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/cart.js"></script>
+    
+</body>
+</html>

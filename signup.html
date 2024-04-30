@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+
+  <link rel="StyleSheet" href="./CSS/all.css" />
+  <link rel="StyleSheet" href="./CSS/font-awesome.min.css" />
+  <link rel="StyleSheet" href="./CSS/bootstrap.min.css" />
+  <link rel="styleSheet" href="./CSS/style.css" />
+  <link rel="styleSheet" href="./CSS/signup.css" />
+
+  <title>Home</title>
+</head>
+
+<body>
+  
+    <header>
+        <nav class="navbar navbar-expand-lg nav-all">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Online Shopping</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="btn btn1-home fst-italic" type="submit"><a href="./signin.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> SignIn</a></button>
+                    <button class="btn btn1-home fst-italic" type="submit" style="background-color: gray;"><a href="./signup.html"><i class="fa-solid fa-user-plus"></i> SignUp</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+  
+    <main class="pb-2 pt-4">
+        
+        <div class="container-fluid">
+            <div class="row justify-content-evenly mt-5">
+                <div class="formContainer"> 
+                    <div class="div-form-signup mx-5">
+                        <form >
+                            <h2>Sign Up</h2>
+        
+                            <div class="nameContainer d-flex flex-column flex-lg-row">
+                                <div>
+                                    <label for="firstName">First name</label>
+                                    <input type="text" placeholder="ex: John" id="firstName" autofocus autocomplete="off">
+                                </div>
+                            
+                                <div>
+                                    <label for="lastName">Last name</label>
+                                    <input type="text" placeholder="ex: Doe" id="lastName" autocomplete="off">
+                                </div>
+                            </div>
+        
+                            <div class="">
+                            <label for="username">Username</label>
+                            <input type="text" placeholder="ex: johndoe00" id="username" autocomplete="off">
+                            </div>
+        
+                            <div class="">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="ex: johndoe@example.com" id="email" autocomplete="off">
+                            </div>
+        
+                            <div class="">
+                                <label for="password"> Password</label>
+                                <div class="inputContainer passwordContainer">
+                                    <input type="password" placeholder="Enter Password" id="password">
+                                    <span class="passwordEye" onclick="showPassWord()"><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <div class="inputContainer passwordContainer">
+                                    <input type="password" placeholder="Renter Password" id="confirmPassword">
+                                    <span class="confirmPasswordEye" onclick="showConfirmPassWord ()"><i class="fa-solid fa-eye"></i></span>
+                                </div>
+                            </div>
+        
+                            <div class="submitContainer">
+                            <button class="btn" id="submitBtn">SignUp <i class="fa-solid fa-right-to-bracket"></i></button>
+                            <p>Already have an account? <a href="#">Sign In</a></p>
+                            </div>
+        
+                        </form>
+                    </div>
+                </div>
+            </div> 
+
+                <div class="div-img-signup">
+                    <img src="./image/signup.jpg" alt="signup" class="img-signup" />
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/signup.js"></script>
+</body>
+
+</html>
